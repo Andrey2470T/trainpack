@@ -15,7 +15,6 @@ advtrains.register_wagon("engine_DB_160", {
 			name=S("Driver stand"),
 			attach_offset={x=0, y=8, z=13},
 			view_offset={x=0, y=0, z=0},
-			driving_ctrl_access=true,
 			group="dstand",
 		},
 		{
@@ -48,6 +47,7 @@ advtrains.register_wagon("engine_DB_160", {
 			name = "Driver Stand",
 			access_to = {"pass"},
 			require_doors_open=true,
+			driving_ctrl_access=true,
 		},
 		pass={
 			name = "Engenier's area",
@@ -71,5 +71,5 @@ advtrains.register_wagon("engine_DB_160", {
 	wagon_span=3.0,
 	is_locomotive=true,
 	collisionbox = {-1.0,-0.5,-1.0, 1.0,2.5,1.0},
-	drops={"advtrains_engine_DB_160"},
+	drops={"advtrains:engine_DB_160"},
 }, S("DB 160 "), "advtrains_DB_160_inv.png")

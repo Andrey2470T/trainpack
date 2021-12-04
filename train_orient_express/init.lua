@@ -15,14 +15,12 @@ advtrains.register_wagon("engine_electronic", {
 			name=S("Driver Stand (front)"),
             attach_offset={x=o, y=6, z=8},
 			view_offset={x=0, y=-3, z=0},
-			driving_ctrl_access=true,
 			group = "dstand",
 		},
 		{
 			name=S("Driver Stand (back)"),
 			  attach_offset={x=o, y=-6, z=8},
 			view_offset={x=0, y=-3, z=0},
-			driving_ctrl_access=true,
 			group = "dstand",
 		},
 	},
@@ -30,6 +28,7 @@ advtrains.register_wagon("engine_electronic", {
 		dstand={
 			name = "Driver Stand",
 			access_to = {},
+			driving_ctrl_access=true
 		},
 	},
     assign_to_seat_group = {"dstand"},
@@ -38,8 +37,8 @@ advtrains.register_wagon("engine_electronic", {
 	collisionbox = {-1.0,-0.5,-1.0, 1.0,2.5,1.0},
 	is_locomotive=true,
 	drops={"advtrains:engine_electronic"},
-	
-}, S("electronic engine"), "advtrains__inv.png")
+
+}, S("electronic engine"), "advtrains_engine_electronic_inv.png")
 
 
 advtrains.register_wagon("wagon_compartment", {
@@ -84,7 +83,7 @@ advtrains.register_wagon("wagon_compartment", {
 	wagon_span=2.5,
 	collisionbox = {-1.0,-0.5,-1.0, 1.0,2.5,1.0},
 	drops={"default:steelblock 4"},
-}, S("Passenger compartment Wagon"), "advtrains_compartment_inv.png") 
+}, S("Passenger compartment Wagon"), "advtrains_compartment_inv.png")
 
 
 advtrains.register_wagon("wagon_sleep", {
@@ -129,5 +128,5 @@ advtrains.register_wagon("wagon_sleep", {
 	wagon_span=2.5,
 	collisionbox = {-1.0,-0.5,-1.0, 1.0,2.5,1.0},
 	drops={"default:steelblock 4"},
-}, S("Passenger sleeping Wagon"), "advtrains_sleep_inv.png") 
+}, S("Passenger sleeping Wagon"), "advtrains_sleep_inv.png")
 

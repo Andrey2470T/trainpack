@@ -15,7 +15,6 @@ advtrains.register_wagon("engine_railbus", {
 			name=S("Driver stand"),
 			attach_offset={x=0, y=8, z=13},
 			view_offset={x=0, y=0, z=0},
-			driving_ctrl_access=true,
 			group="dstand",
 		},
 		{
@@ -48,6 +47,7 @@ advtrains.register_wagon("engine_railbus", {
 			name = "Driver Stand",
 			access_to = {"pass"},
 			require_doors_open=true,
+			driving_ctrl_access=true,
 		},
 		pass={
 			name = "Passenger area",
@@ -71,6 +71,6 @@ advtrains.register_wagon("engine_railbus", {
 	wagon_span=2.5,
 	is_locomotive=true,
 	collisionbox = {-1.0,-0.5,-1.0, 1.0,2.5,1.0},
-	drops={"advtrains:railbus"},
+	drops={"advtrains:engine_railbus"},
 }, S("railbus"), "advtrains_railbus_inv.png")
 

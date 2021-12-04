@@ -17,7 +17,6 @@ advtrains.register_wagon("NY_lokomotive", {
 			name=S("Driver Stand (left)"),
 			attach_offset={x=-1, y=5, z=2},
 			view_offset={x=0, y=-4, z=2},
-			driving_ctrl_access=true,
 			group = "dstand",
 		},
 {
@@ -50,6 +49,7 @@ advtrains.register_wagon("NY_lokomotive", {
 			name = "Driver Stand",
 			access_to = {"pass"},
 			require_doors_open=true,
+			driving_ctrl_access=true
 		},
 		pass={
 			name = "Passenger area",
@@ -79,7 +79,7 @@ advtrains.register_wagon("NY_lokomotive", {
 	end,
 
 
-	drops={"advtrains:engine_ny"},
+	drops={"advtrains:NY_lokomotive"},
 }, S("NY subway Engine"), "advtrains_engine_ny_inv.png")
 
 advtrains.register_wagon("ny_wagon", {
@@ -147,7 +147,7 @@ advtrains.register_wagon("ny_wagon", {
 	visual_size = {x=1, y=1},
 	wagon_span=2.3,
 	collisionbox = {-1.0,-0.5,-1.0, 1.0,2.5,1.0},
-	drops={"advtrains_wagon_ny"},
+	drops={"advtrains:ny_wagon"},
 }, S("NY subway wagon"), "advtrains_wagon_ny_inv.png")
 
 

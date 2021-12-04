@@ -1,75 +1,49 @@
-# DlxTrains ModPack
+# DlxTrains
 
-DlxTrains ModPack is an extension for AdvTrains that adds train related content for Minetest train operations.  Features of the modpack include:
-
-- Detailed wagons whose livery and age appearance can be selected by the owning player.
-- 10 industrial freight wagons, including some that have visible loads that reflect the wagon's inventory.
-- 2 support wagons, including an escort wagon and a caboose.
-
-Note: This modpack does not currently include any locomotives.  Please use another mod to get those, such as [AdvTrains Basic Trains](https://content.minetest.net/packages/orwell/basic_trains/).
+DlxTrains is the base mod which is required for all other DlxTrains related mods.  It provides some shared utilities used by other DlxTrains mods as well as some common craft items and tools for players.
 
 ![](screenshot.png)
 
-## Included mods
+Note: DLX is used here to denote items, tools and wagons defined in the DlxTrains ModPack.
 
-Please see the README file in each of the included mod folders for important additional information.
+## Mod settings
 
-- **DlxTrains** - This is the base mod needed by all other DlxTrains related mods.  It contains common craft items and tools for the modpack plus utilities needed by the other DlxTrains mods.
-- **DlxTrains Cargo** - This is an optional mod that adds some cargo nodes as well as additional cargo related textures that can be used by the DlxTrains Industrial Wagons mod.
-- **DlxTrains Industrial Wagons** - This mod provides freight wagons that feature selectable liveries and, in some cases, visible cargo.
-- **DlxTrains Support Wagons** - This mod provides support wagons, including an escort wagon and a caboose, both of which provide additional seating for train crew members.  These wagons also feature selectable liveries.
+DlxTrains has the following settings.  These settings will also apply to other DlxTrains mods that define additional wagons.
 
-## Liveries
+- **Complexity of DLX wagon crafting recipes** (Standard, Basic) - The Standard setting requires that DLX wagons are crafted from intermediate craft items that represent various wagon parts such as couplers, bogies, wheel sets, etc.  The Basic setting simplifies the recipes and reduces the number of craft items added to the game.  It also thereby reduces the overall cost to craft the wagons.  The default is "Standard".
 
-All of the liveries in DlxTrains are intended to be fictional.  The following table summarizes the set of currently available liveries, including their colors and the count of wagons of a given category that uses the livery.
+	*NOTE: Switching this setting from "Standard" to "Basic" after players have created DLX items can result in "Unknown Items" appearing in the game.*
 
-Logo|Livery Code|Primary Color|Secondary Color|Industrial Wagons|Support Wagons
-:---:|---|---|---|:---:|:---:
-![](dlxtrains/textures/dlxtrains_logo_ar.png)|AR|Red|Yellow|1|0
-![](dlxtrains/textures/dlxtrains_logo_at.png)|AT|Light Green|Yellow|1|0
-![](dlxtrains/textures/dlxtrains_logo_dlx.png)|DL&X|Black|Light Grey|6|1
-![](dlxtrains/textures/dlxtrains_logo_dz.png)|DZ|Red|Light Grey|4|1
-![](dlxtrains/textures/dlxtrains_logo_nr.png)|NR|n/a*|n/a*|1|1
-![](dlxtrains/textures/dlxtrains_logo_t.png)|T|Brown|Yellow|6|2
-![](dlxtrains/textures/dlxtrains_logo_tt.png)|TT|n/a*|n/a*|1|0
-![](dlxtrains/textures/dlxtrains_logo_vr.png)|VR|Light Grey|Red|1|0
-![](dlxtrains/textures/dlxtrains_logo_wf.png)|WF|Green|Grey|1|1
-![](dlxtrains/textures/dlxtrains_logo_zr.png)|ZR|Yellow|Black|1|0
+- **Use a random livery when placing wagons** (Enabled/Disabled) - If enabled, a random livery will be selected for the wagon when it is placed.  Otherwise, each wagon will always be placed using a default livery defined for that type of wagon.  A player can change the livery later by using the **DLX Livery Selector Tool**.  The default is "Enabled".
 
-\* These liveries are currently only used on wagons from earlier eras before distinctive railway color schemes were established.  These colors will be defined in a future release of DlxTrains if the livery is applied to a later era wagon.
+- **Default age appearance for newly placed wagons** (New, Random, Used) - Specifies the initial apparent age of a DLX wagon when it is placed.  A player can change the apparent age later by using the **DLX Age Selector Tool**.  The default is "Random".
 
-## Author's Notes
+- **Longest DLX wagon to include in game** (5m, 6m, 7m, 8m, Unlimited) - This specifies the maximum overall length in meters of the DLX wagons to be included in the game.  It will also prevent any craft item from being added to the game if the item is only needed for excluded wagons.  The default is "Unlimited".
 
-1) All of the wagons in this modpack will function properly on any of the AdvTrains track.  However, the appearance of some of the longer wagons in this modpack will be more realistic if they are only used on track that is built with large radius curves and shallow slopes.  This is not deemed to be a significant problem since it also happens in the real world that there are some trains that can only run on track that is constructed to accommodate their requirements.  However, players wanting to limit the inclusion of longer DLX wagons in game should consult the DlxTrains mod's README.md file for details on how to accomplish that using that mod's settings.
+	*NOTE: Switching this setting from a less restrictive setting to a more restrictive setting after players have created DLX items or wagons can result in "Unknown Items" appearing in the game and warning messages from AdvTrains about missing wagon definitions.*
 
-2) The wagons in this mod are modeled with some additional detail to highlight a few of their distinct characteristics.  The goal was to achieve a reasonable balance between additional detail while still maintaining an overall appearance appropriate for Minetest.
+## Craft Items
 
-## Acknowledgments
+These items are typically needed for crafting DLX wagons and tools.  The "DLX Blueprint" is always defined and added to the game.  The others are only defined when the "**Complexity of DLX wagon crafting recipes**" setting is set to "Standard".
 
-This modpack would not exist without the prior efforts of the following people:
+- **DLX Blueprint** - This is a "design document" that is needed to craft many of the items, tools and wagons defined in the DlxTrains ModPack.
+- **Bogie** - This is a pair of wheel sets that are connected by a framework that can turn independently of the wagon that it supports.  It is also known as a "truck".
+- **Coupler, Buffer & Chain** - This is one of the common early forms of a wagon coupler and is the default coupling system used by AdvTrains.
+- **Coupler, Knuckle** - This a common style of wagon coupler that is used in many parts of the world.  This item is a generic representation of the many variations of knuckle coupler.
+- **Wagon Chassis** - This is the underframe of the wagon.
+- **Wheel Set** - This is a pair of wheels connected by an axle.
 
-- **orwell**, creator of [AdvTrains](http://advtrains.de/wiki/doku.php), upon which this modpack depends.
-- **rubberduck**, creator of the [moretrains](https://forum.minetest.net/viewtopic.php?f=9&t=24112) modpack for AdvTrains and whose excellent models were an inspiration for starting this project.
-- **gpcf**, whose technical work to enable players to paint wagons ([JR E231 Series](https://advtrains.de/wiki/doku.php?id=usage:trains:advtrains_train_jre231)) and wagons to have visible cargo based on their inventory content (see [forum posts](https://forum.minetest.net/viewtopic.php?f=9&t=24112&start=25)) was an inspiration for the texture and model manipulation features of this modpack.
+## Tools
+
+DLX Tools only work with DLX wagons.  Click near the center (i.e. on the selection box) of the wagon in order for the tool to have an effect.  These tools do not wear out or need to be recharged.  Only the wagon owner can use these tools on the wagon.
+
+- **DLX Age Selector Tool** - This tool is used to toggle the age appearance of DLX wagons between "nearly new" and "used/weathered".  The amount of "weathering" will differ by livery.  That is to say, the amount of weathering for one livery can be significantly different from that of another livery for the same type of wagon.  This was done intentionally in order to provide more variety to the appearance of trains.  As a side effect, this tool will also update any visible cargo if it is out of sync with the wagon's inventory.
+- **DLX Livery Selector Tool** - This tool is used to select the livery of DLX wagons.  A livery in this case is more than just a color scheme.  It also includes markings and logos and occasionally other minor cosmetic variations.  Each DLX wagon will have two or more liveries from which to choose.  Left-clicking (punching) on a DLX wagon with this tool changes it to the next livery.  Holding the sneak key while left-clicking on a DLX wagon changes it to the previous livery.  As a side effect, this tool will also update any visible cargo if it is out of sync with the wagon's inventory.
+- **DLX Wagon Updater Tool** - This tool is used to immediately update a DLX wagon's visible cargo in case it is out of sync with its inventory.  Although the visible cargo of a DLX wagon will automatically update the next time the area of the map is reloaded or the game is restarted, this tool can be used to force an immediate update without leaving the area or the game.   Thus, it can be useful to confirm or update a DLX wagon's visible cargo when the inventory of the wagon has just been changed, either manually or automatically via load and unload tracks.
 
 ## Licenses
 
 Copyright © 2021 Marnack
 
-- DlxTrains ModPack code is licensed under the GNU AGPL version 3 license, see [LICENSE.txt](LICENSE.txt) for details.
-- Unless otherwise specified, DlxTrains ModPack media (models, textures and sounds) are licensed under [CC BY-SA 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
-
-### Attributions
-
-The following textures from prior art where included in whole or in part in some of the textures for this ModPack:
-
-- From the game for Minetest named "mintest_game":
-	- default_acacia_wood.png (CC BY-SA 3.0 by paramat)
-	- default_junglewood.png (CC BY-SA 3.0 by paramat)
-	- default_pine_wood.png (CC BY-SA 3.0 by paramat)
-	- default_tree.png (CC BY-SA 3.0 by Cisoun)
-	- default_tree_top.png (CC BY-SA 3.0 by Cisoun)
-	- default_wood.png (CC BY-SA 3.0 by BlockMen)
-
-- From the mod for Minetest named "farming":
-	- farming_hemp_rope.png (CC BY-SA 3.0 by TenPlus1)
+- DlxTrains code is licensed under the GNU AGPL version 3 license.
+- Unless otherwise specified, DlxTrains media (models, textures and sounds) are licensed under [CC BY-SA 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/).
