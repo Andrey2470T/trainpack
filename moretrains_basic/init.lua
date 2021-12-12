@@ -14,38 +14,38 @@ advtrains.register_wagon("moretrains_railroad_car", {
 	seats = {
 		{
 			name="1",
-			attach_offset={x=-4, y=-2, z=8},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=-4, y=-0.4, z=8},
+			view_offset={x=-4, y=-0.4, z=8},
 			group="pass",
 		},
 		{
 			name="2",
-			attach_offset={x=4, y=-2, z=8},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=4, y=-0.4, z=8},
+			view_offset={x=4, y=-0.4, z=8},
 			group="pass",
 		},
 		{
 			name="1a",
-			attach_offset={x=-4, y=-2, z=0},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=-4, y=-0.4, z=0},
+			view_offset={x=-4, y=-0.4, z=0},
 			group="pass",
 		},
 		{
 			name="2a",
-			attach_offset={x=4, y=-2, z=0},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=4, y=-0.4, z=0},
+			view_offset={x=4, y=-0.4, z=0},
 			group="pass",
 		},
 		{
 			name="3",
-			attach_offset={x=-4, y=-2, z=-8},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=-4, y=-0.4, z=-8},
+			view_offset={x=-4, y=-0.4, z=-8},
 			group="pass",
 		},
 		{
 			name="4",
-			attach_offset={x=4, y=8, z=-8},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=4, y=-0.4, z=-8},
+			view_offset={x=4, y=-0.4, z=-8},
 			group="pass",
 		},
 	},
@@ -82,38 +82,38 @@ advtrains.register_wagon("moretrains_silberling", {
 	seats = {
 		{
 			name="1",
-			attach_offset={x=-4, y=-2, z=8},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=-4, y=-0.4, z=8},
+			view_offset={x=-4, y=-0.4, z=8},
 			group="pass",
 		},
 		{
 			name="2",
-			attach_offset={x=4, y=-2, z=8},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=4, y=-0.4, z=8},
+			view_offset={x=4, y=-0.4, z=8},
 			group="pass",
 		},
 		{
 			name="1a",
-			attach_offset={x=-4, y=-2, z=0},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=-4, y=-0.4, z=0},
+			view_offset={x=-4, y=-0.4, z=0},
 			group="pass",
 		},
 		{
 			name="2a",
-			attach_offset={x=4, y=-2, z=0},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=4, y=-0.4, z=0},
+			view_offset={x=4, y=-0.4, z=0},
 			group="pass",
 		},
 		{
 			name="3",
-			attach_offset={x=-4, y=-2, z=-8},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=-4, y=-0.4, z=-8},
+			view_offset={x=-4, y=-0.4, z=-8},
 			group="pass",
 		},
 		{
 			name="4",
-			attach_offset={x=4, y=8, z=-8},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=4, y=-0.4, z=-8},
+			view_offset={x=4, y=-0.4, z=-8},
 			group="pass",
 		},
 	},
@@ -155,7 +155,7 @@ advtrains.register_wagon("moretrains_diesel_german", {
 			driving_ctrl_access=true,
 			group = "dstand",
 		},
-		
+
 	},
 	seat_groups = {
 		dstand={
@@ -182,43 +182,43 @@ advtrains.register_wagon("moretrains_silberling_train", {
 		{
 			name=S("Driver stand"),
 			attach_offset={x=0, y=-0.4, z=21},
-			view_offset={x=10.4, y=9, z=0},
+			view_offset={x=0, y=-0.4, z=21},
 			group="dstand",
 		},
 		{
 			name="1",
-			attach_offset={x=-4, y=-2, z=8},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=-4, y=-0.4, z=8},
+			view_offset={x=-4, y=-0.4, z=8},
 			group="pass",
 		},
 		{
 			name="2",
-			attach_offset={x=4, y=-2, z=8},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=4, y=-0.4, z=8},
+			view_offset={x=4, y=-0.4, z=8},
 			group="pass",
 		},
 		{
 			name="1a",
-			attach_offset={x=-4, y=-2, z=0},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=-4, y=-0.4, z=0},
+			view_offset={x=-4, y=-0.4, z=0},
 			group="pass",
 		},
 		{
 			name="2a",
-			attach_offset={x=4, y=-2, z=0},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=4, y=-0.4, z=0},
+			view_offset={x=4, y=-0.4, z=0},
 			group="pass",
 		},
 		{
 			name="3",
-			attach_offset={x=-4, y=-2, z=-8},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=-4, y=-0.4, z=-8},
+			view_offset={x=-4, y=-0.4, z=-8},
 			group="pass",
 		},
 		{
 			name="4",
-			attach_offset={x=4, y=8, z=-8},
-			view_offset={x=0, y=-2, z=0},
+			attach_offset={x=4, y=-0.4, z=-8},
+			view_offset={x=4, y=-0.4, z=-8},
 			group="pass",
 		},
 	},
@@ -269,7 +269,7 @@ local ingot = 'default:steel_ingot'
 if  minetest.get_modpath("moreores") then
 	block = 'moreores:silver_block'
 	ingot = 'moreores:silver_ingot'
-	
+
 end
 
 minetest.register_craft({

@@ -13,49 +13,20 @@ advtrains.register_wagon("engine_transib", {
 	seats = {
 		{
 			name=S("Driver stand"),
-			attach_offset={x=0, y=8, z=13},
-			view_offset={x=0, y=0, z=0},
+			attach_offset={x=0, y=2, z=10},
+			view_offset={x=0, y=2, z=10},
 			driving_ctrl_access=true,
 			group="dstand",
-		},
-		{
-			name="1",
-			attach_offset={x=-4, y=8, z=0},
-			view_offset={x=0, y=0, z=0},
-			group="pass",
-		},
-		{
-			name="2",
-			attach_offset={x=4, y=8, z=0},
-			view_offset={x=0, y=0, z=0},
-			group="pass",
-		},
-		{
-			name="3",
-			attach_offset={x=-4, y=8, z=-8},
-			view_offset={x=0, y=0, z=0},
-			group="pass",
-		},
-		{
-			name="4",
-			attach_offset={x=4, y=8, z=-8},
-			view_offset={x=0, y=0, z=0},
-			group="pass",
-		},
+		}
 	},
 	seat_groups = {
 		dstand={
 			name = "Driver Stand",
-			access_to = {"pass"},
+			access_to = {},
 			require_doors_open=true,
-		},
-		pass={
-			name = "Passenger area",
-			access_to = {"dstand"},
-			require_doors_open=true,
-		},
+		}
 	},
-	assign_to_seat_group = {"dstand", "pass"},
+	assign_to_seat_group = {"dstand"},
 	doors={
 		open={
 			[-1]={frames={x=0, y=20}, time=1},

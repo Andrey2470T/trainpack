@@ -15,14 +15,14 @@ advtrains.register_wagon("diesel_lokomotive", {
 	seats = {
 		{
 			name = S("Driver Stand (left)"),
-			attach_offset = {x=-3, y=12, z=-2},
-			view_offset = {x=-4, y=3, z=0},
+			attach_offset = {x=-3, y=4, z=3},
+			view_offset = {x=-3, y=4, z=3},
 			group = "dstand",
 		},
 		{
 			name = S("Trainee Seat (right)"),
-			attach_offset = {x=3, y=12, z=-2},
-			view_offset = {x=4, y=3, z=0},
+			attach_offset = {x=3, y=4, z=3},
+			view_offset = {x=3, y=4, z=3},
 			group = "tseat",
 		},
 	},
@@ -90,9 +90,9 @@ advtrains.register_wagon("wagon_gravel", {
 	collisionbox = {-1.0,-0.5,-1.0, 1.0,1.5,1.0},
 	drops={"advtrains:wagon_gravel"},
 	has_inventory = true,
-	get_inventory_formspec = function(self)
+	get_inventory_formspec = function(self, pname, invname)
 		return "size[8,11]"..
-			"list[detached:advtrains_wgn_"..self.unique_id..";box;0,0;8,6;]"..
+			"list[" .. invname .. ";box;0,0;8,6;]"..
 			"list[current_player;main;0,7;8,4;]"..
 			"listring[]"
 	end,
@@ -112,9 +112,9 @@ advtrains.register_wagon("wagon_track", {
 	collisionbox = {-1.0,-0.5,-1.0, 1.0,1.5,1.0},
 	drops={"advtrains:wagon_track"},
 	has_inventory = true,
-	get_inventory_formspec = function(self)
+	get_inventory_formspec = function(self, pname, invname)
 		return "size[8,11]"..
-			"list[detached:advtrains_wgn_"..self.unique_id..";box;0,0;8,6;]"..
+			"list[" .. invname .. ";box;0,0;8,6;]"..
 			"list[current_player;main;0,7;8,4;]"..
 			"listring[]"
 	end,
@@ -136,11 +136,10 @@ advtrains.register_wagon("wagon_lava", {
 	collisionbox = {-1.0,-0.5,-1.0, 1.0,1.5,1.0},
 	drops={"advtrains:wagon_lava"},
 	has_inventory = true,
-	get_inventory_formspec = function(self)
+	get_inventory_formspec = function(self, pname, invname)
 		return "size[8,11]"..
-			"list[detached:advtrains_wgn_"..self.unique_id..";box;0,0;8,6;]"..
-			"list[current_player;main;0,7;8,4;]"..
-			"listring[]"
+			"list[" .. invname .. ";box;0,0;8,6;]"..
+			"list[current_player;main;0,7;8,4;]"
 	end,
 	inventory_list_sizes = {
 		box=8*6,
@@ -159,9 +158,9 @@ advtrains.register_wagon("wagon_tree", {
 	collisionbox = {-1.0,-0.5,-1.0, 1.0,1.5,1.0},
 	drops={"advtrains:wagon_tree"},
 	has_inventory = true,
-	get_inventory_formspec = function(self)
+	get_inventory_formspec = function(self, pname, invname)
 		return "size[8,11]"..
-			"list[detached:advtrains_wgn_"..self.unique_id..";box;0,0;8,6;]"..
+			"list[" .. invname .. ";box;0,0;8,6;]"..
 			"list[current_player;main;0,7;8,4;]"..
 			"listring[]"
 	end,

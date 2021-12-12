@@ -12,14 +12,14 @@ advtrains.register_wagon("newlocomotive", {
 	seats = {
 		{
 			name=S("Driver Stand (left)"),
-			attach_offset={x=-5, y=0, z=-10},
-			view_offset={x=0, y=6, z=0},
+			attach_offset={x=-4, y=3, z=-8},
+			view_offset={x=-4, y=3, z=-8},
 			group = "dstand",
 		},
 		{
 			name=S("Driver Stand (right)"),
-			attach_offset={x=5, y=0, z=-10},
-			view_offset={x=0, y=6, z=0},
+			attach_offset={x=4, y=3, z=-8},
+			view_offset={x=4, y=3, z=-8},
 			group = "dstand",
 		},
 	},
@@ -40,7 +40,7 @@ advtrains.register_wagon("newlocomotive", {
 			self.old_anim_velocity=advtrains.abs_ceil(velocity)
 		end
 	end,
-    
+
 	custom_on_activate = function(self, staticdata_table, dtime_s)
 		minetest.add_particlespawner({
 			amount = 10,
@@ -82,13 +82,13 @@ advtrains.register_wagon("detailed_steam_engine", {
 		{
 			name=S("Driver Stand (left)"),
 			attach_offset={x=-8, y=0, z=-10},
-			view_offset={x=9, y=-2, z=-6},
+			view_offset={x=-8, y=0, z=-10},
 			group = "dstand",
 		},
 		{
 			name=S("Driver Stand (right)"),
 			attach_offset={x=8, y=0, z=-10},
-			view_offset={x=0, y=6, z=0},
+			view_offset={x=8, y=0, z=-10},
 			group = "dstand",
 		},
 	},
@@ -191,7 +191,7 @@ advtrains.register_wagon("wagon_default", {
 			access_to = {},
 		},
 	},
-	
+
 	assign_to_seat_group = {"pass"},
 	visual_size = {x=1, y=1},
 	wagon_span=2.634,

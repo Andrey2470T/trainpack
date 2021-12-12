@@ -14,8 +14,8 @@ advtrains.register_wagon("rocket", {
 	seats = {
 		{
 			name=S("Driver Stand"),
-			attach_offset={x=0, y=10, z=-10},
-			view_offset={x=0, y=6, z=0},
+			attach_offset={x=0, y=9, z=-6},
+			view_offset={x=0, y=9, z=-6},
 			group = "dstand",
 		},
 	},
@@ -82,9 +82,9 @@ advtrains.register_wagon("rocket_wagon_tender", {
 	collisionbox = {-1.0,-0.5,-1.0, 1.0,1.5,1.0},
 	drops={"default:steelblock 4"},
 	has_inventory = true,
-	get_inventory_formspec = function(self)
+	get_inventory_formspec = function(self, pname, invname)
 		return "size[8,11]"..
-			"list[detached:advtrains_wgn_"..self.unique_id..";box;0,0;8,6;]"..
+			"list[" .. invname .. ";box;0,0;8,6;]"..
 			"list[current_player;main;0,7;8,4;]"..
 			"listring[]"
 	end,
@@ -106,9 +106,9 @@ advtrains.register_wagon("rocket_wagon_box", {
 	collisionbox = {-1.0,-0.5,-1.0, 1.0,1.5,1.0},
 	drops={"default:steelblock 4"},
 	has_inventory = true,
-	get_inventory_formspec = function(self)
+	get_inventory_formspec = function(self, pname, invname)
 		return "size[8,11]"..
-			"list[detached:advtrains_wgn_"..self.unique_id..";box;0,0;8,6;]"..
+			"list[" .. invname .. ";box;0,0;8,6;]"..
 			"list[current_player;main;0,7;8,4;]"..
 			"listring[]"
 	end,

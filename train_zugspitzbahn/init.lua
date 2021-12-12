@@ -14,14 +14,14 @@ advtrains.register_wagon("engine_zugspitzbahn", {
 	seats = {
         {
 			name=S("Driver Stand (front)"),
-            attach_offset={x=o, y=6, z=8},
-			view_offset={x=0, y=-3, z=0},
+            attach_offset={x=0, y=0, z=18},
+			view_offset={x=0, y=0, z=18},
 			group = "dstand",
 		},
 		{
 			name=S("Driver Stand (back)"),
-			  attach_offset={x=o, y=-6, z=8},
-			view_offset={x=0, y=-3, z=0},
+			attach_offset={x=0, y=0, z=-18},
+			view_offset={x=0, y=0, z=-18},
 			group = "dstand",
 		},
 	},
@@ -38,8 +38,8 @@ advtrains.register_wagon("engine_zugspitzbahn", {
 	collisionbox = {-1.0,-0.5,-1.0, 1.0,2.5,1.0},
 	is_locomotive=true,
 	drops={"advtrains:engine_zugspitzbahn"},
-	
-}, S("Zugspitzbahn engine"), "advtrains_bzb_inv.png")
+
+}, S("Zugspitzbahn engine"), "advtrains_engine_bzb_inv.png")
 
 advtrains.register_wagon("wagon_zugspitzbahn", {
 	mesh="advtrains_wagon_bzb.b3d",
@@ -83,6 +83,6 @@ advtrains.register_wagon("wagon_zugspitzbahn", {
 	wagon_span=3,
 	collisionbox = {-1.0,-0.5,-1.0, 1.0,2.5,1.0},
 	drops={"default:steelblock 4"},
-}, S("Passenger Zugspitzbahn wagon"), "advtrains_bzb_inv.png") 
+}, S("Passenger Zugspitzbahn wagon"), "advtrains_bzb_inv.png")
 
 
