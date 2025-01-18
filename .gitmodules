@@ -1,0 +1,48 @@
+[submodule "basic_trains"]
+	path = basic_trains
+	url = https://git.bananach.space/basic_trains.git/
+[submodule "advtrains_bboe_1080"]
+	path = advtrains_bboe_1080
+	url = https://codeberg.org/advtrains_supplemental/advtrains_bboe_1080
+[submodule "advtrains_db_160"]
+	path = advtrains_db_160
+	url = https://codeberg.org/advtrains_supplemental/advtrains_db_160
+[submodule "advtrains_granite"]
+	path = advtrains_granite
+	url = https://github.com/h-v-smacker/advtrains_granite
+[submodule "advtrains_train_jpntlr600"]
+	path = advtrains_train_jpntlr600
+	url = https://codeberg.org/advtrains_supplemental/advtrains_train_jpntlr600
+[submodule "dlxtrains_modpack"]
+	path = dlxtrains_modpack
+	url = https://github.com/Marnack/dlxtrains_modpack
+[submodule "advtrains_railbus"]
+	path = advtrains_railbus
+	url = https://codeberg.org/advtrains_supplemental/advtrains_railbus
+[submodule "advtrains_train_rocket"]
+	path = advtrains_train_rocket
+	url = https://codeberg.org/advtrains_supplemental/advtrains_train_rocket
+[submodule "advtrains_transib"]
+	path = advtrains_transib
+	url = https://codeberg.org/advtrains_supplemental/advtrains_transib
+[submodule "advtrains_freight_train"]
+	path = advtrains_freight_train
+	url = https://codeberg.org/advtrains_supplemental/advtrains_freight_train
+[submodule "moretrains"]
+	path = moretrains
+	url = https://git.bananach.space/moretrains.git
+[submodule "advtrains_subway_ny"]
+	path = advtrains_subway_ny
+	url = https://codeberg.org/advtrains_supplemental/advtrains_subway_ny
+[submodule "advtrains_train_orient_express"]
+	path = advtrains_train_orient_express
+	url = https://codeberg.org/advtrains_supplemental/advtrains_train_orient_express
+[submodule "advtrains_train_zugspitzbahn"]
+	path = advtrains_train_zugspitzbahn
+	url = https://codeberg.org/advtrains_supplemental/advtrains_train_zugspitzbahn
+[submodule "tfl_s7_stock_modpack"]
+	path = tfl_s7_stock_modpack
+	url = https://codeberg.org/advtrains_supplemental/tfl_s7_stock_modpack
+[submodule "some_more_trains"]
+	path = some_more_trains
+	url = https://github.com/APercy/some_more_trains
